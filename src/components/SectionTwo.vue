@@ -83,17 +83,17 @@
 	text-align: left;
 }
 .steps-paragraph-even {
-	margin: 10px 10px 20px 70px;
+	margin: 10px 10px 20px 0px;
 	font-size: 24px;
-	// text-align: right;
+	text-align: right;
 }
 
 .steps-arrow-odd {
-	margin-left: 30px;
+	margin-left: 50px;
 	transform: rotate(45deg);
 }
 .steps-arrow-even {
-	margin-left: 30px;
+	margin-left: 50px;
 	transform: rotate(135deg);
 }
 </style>
