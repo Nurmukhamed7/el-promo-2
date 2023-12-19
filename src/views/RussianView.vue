@@ -1,5 +1,7 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue'
+import SectionTwo from '@/components/SectionTwo.vue'
+
 // import SectionSecond from '../../components/second/SectionSecond.vue'
 </script>
 
@@ -59,7 +61,7 @@ import TheNavbar from '@/components/TheNavbar.vue'
 					</div>
 				</div>
 			</header>
-			<!-- <section-second></section-second> -->
+			<section-two></section-two>
 		</div>
 	</div>
 </template>
@@ -69,19 +71,6 @@ import TheNavbar from '@/components/TheNavbar.vue'
 
 header {
 	text-align: center;
-}
-
-.logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 7.11px;
-
-	span {
-		font-size: 20.7px;
-		color: $white;
-		font-weight: 700;
-	}
 }
 
 .rel {

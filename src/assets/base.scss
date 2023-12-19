@@ -122,3 +122,16 @@ a {
 span {
 	color: $yellow;
 }
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 7.11px;
+
+	span {
+		font-size: 20.7px;
+		color: $white;
+		font-weight: 700;
+	}
+}
