@@ -11,7 +11,7 @@ import router from './router'
 const app = createApp(App)
 
 const i18n = createI18n({
-	locale: document.cookie.split('=')[1],
+	locale: navigator.language.split('-')[1],
 	messages: {
 		EN: EN,
 		RU: RU,

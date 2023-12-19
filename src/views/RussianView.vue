@@ -1,11 +1,11 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue'
 import SectionTwo from '@/components/SectionTwo.vue'
-import { onMounted } from 'vue'
+// import { onMounted } from 'vue'
 
-onMounted(() => {
-	document.cookie = 'locale=EN'
-})
+// onMounted(() => {
+// 	document.cookie = 'locale=EN'
+// })
 // import SectionSecond from '../../components/second/SectionSecond.vue'
 </script>
 
