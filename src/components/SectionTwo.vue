@@ -36,6 +36,39 @@
 			/>
 			<h3 class="steps-paragraph-odd">5 - Ожидай итоги</h3>
 		</div>
+		<div class="read">
+			<img
+				class="left-pic-2"
+				src="@/assets/images/leftPic2.png"
+				alt="leftPic2"
+			/>
+			<img
+				class="right-pic-2"
+				src="@/assets/images/rightPic2.png"
+				alt="leftPic2"
+			/>
+
+			<img class="arrow" src="@/assets/images/arrow.svg" alt="arrow" />
+			<div class="downloads">
+				<img
+					v-if="$i18n.locale === 'ru'"
+					class="btn"
+					src="@/assets/images/appstore-ru.png"
+					alt="appstore"
+				/>
+				<img
+					v-else
+					class="btn"
+					src="@/assets/images/appstore-en.png"
+					alt="appstore"
+				/>
+				<img
+					class="btn"
+					src="@/assets/images/googleplay-ru.png"
+					alt="googleplay"
+				/>
+			</div>
+		</div>
 	</section>
 </template>
 
@@ -95,5 +128,40 @@
 .steps-arrow-even {
 	margin-left: 50px;
 	transform: rotate(135deg);
+}
+
+.read {
+	position: relative;
+	margin-top: 104px;
+}
+
+.left-pic-2 {
+	position: absolute;
+	left: -40px;
+	top: -100px;
+	width: 166px;
+	z-index: -10;
+}
+.right-pic-2 {
+	position: absolute;
+	right: -40px;
+	width: 128px;
+	top: -180px;
+}
+
+.arrow {
+	position: absolute;
+	width: 97px;
+	height: 58px;
+	left: 50%;
+	transform: translate(-50%, 12%);
+}
+.downloads {
+	margin-top: 22px;
+	display: flex;
+	justify-content: space-between;
+	.btn {
+		width: 108px;
+	}
 }
 </style>

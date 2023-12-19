@@ -78,7 +78,7 @@ body {
 	background-image: url('/src/assets/images/background4.png');
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 	margin: 0;
 	padding: 0;
 	min-height: 100%;
@@ -123,6 +123,13 @@ span {
 	color: $yellow;
 }
 
+p {
+	color: $white;
+	font-size: 20px;
+	font-weight: 800;
+	text-align: center;
+}
+
 .logo {
 	display: flex;
 	align-items: center;
@@ -134,4 +141,8 @@ span {
 		color: $white;
 		font-weight: 700;
 	}
+}
+
+.wrapper {
+	margin-top: 102px;
 }
