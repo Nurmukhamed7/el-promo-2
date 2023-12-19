@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import RussianView from '../views/RussianView.vue'
 import EnglishView from '../views/EnglishView.vue'
 import TurkishView from '../views/TurkishView.vue'
@@ -10,7 +9,7 @@ const router = createRouter({
 		{
 			path: '/',
 			name: 'home',
-			component: HomeView,
+			redirect: '/ru',
 		},
 		{
 			path: '/ru',
