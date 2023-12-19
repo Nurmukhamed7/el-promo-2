@@ -83,9 +83,9 @@
 	text-align: left;
 }
 .steps-paragraph-even {
-	margin: 10px 10px 20px 0;
+	margin: 10px 10px 20px 70px;
 	font-size: 24px;
-	text-align: right;
+	// text-align: right;
 }
 
 .steps-arrow-odd {
