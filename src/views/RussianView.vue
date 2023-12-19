@@ -84,7 +84,7 @@ header {
 }
 .right-pic {
 	position: absolute;
-	right: -10px;
+	right: -20px;
 	z-index: -10;
 }
 .sale {
