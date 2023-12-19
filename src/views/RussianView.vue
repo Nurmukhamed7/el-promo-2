@@ -1,12 +1,6 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue'
 import SectionTwo from '@/components/SectionTwo.vue'
-// import { onMounted } from 'vue'
-
-// onMounted(() => {
-// 	document.cookie = 'locale=EN'
-// })
-// import SectionSecond from '../../components/second/SectionSecond.vue'
 </script>
 
 <template>
@@ -54,8 +48,15 @@ import SectionTwo from '@/components/SectionTwo.vue'
 					<img class="arrow" src="@/assets/images/arrow.svg" alt="arrow" />
 					<div class="downloads">
 						<img
+							v-if="$i18n.locale === 'ru'"
 							class="btn"
 							src="@/assets/images/appstore-ru.png"
+							alt="appstore"
+						/>
+						<img
+							v-else
+							class="btn"
+							src="@/assets/images/appstore-en.png"
 							alt="appstore"
 						/>
 						<img
