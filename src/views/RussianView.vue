@@ -1,7 +1,11 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue'
 import SectionTwo from '@/components/SectionTwo.vue'
+import { onMounted } from 'vue'
 
+onMounted(() => {
+	document.cookie = 'locale=EN'
+})
 // import SectionSecond from '../../components/second/SectionSecond.vue'
 </script>
 
@@ -14,7 +18,8 @@ import SectionTwo from '@/components/SectionTwo.vue'
 					<img src="@/assets/images/logo/logo.svg" alt="logo" />
 					<span>EasyLife</span>
 				</div>
-				<h2>ВНИМАНИЕ!</h2>
+				<!-- <h2>ВНИМАНИЕ!</h2> -->
+				<h2>{{ $t('attension') }}</h2>
 				<div class="rel">
 					<h1>РОЗЫГРЫШ</h1>
 					<img
