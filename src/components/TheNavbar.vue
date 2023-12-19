@@ -2,6 +2,7 @@
 	<nav>
 		<button @click="$i18n.locale = 'en'">EN</button>
 		<button @click="$i18n.locale = 'ru'">RU</button>
+		<button @click="$i18n.locale = 'tr'">TR</button>
 
 		<router-link to="/" class="language">RU</router-link>
 		<router-link to="/en" class="language">EN</router-link>

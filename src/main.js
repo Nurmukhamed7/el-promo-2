@@ -1,6 +1,7 @@
 import { createI18n } from 'vue-i18n'
 import en from './locale/en.json'
 import ru from './locale/ru.json'
+import tr from './locale/tr.json'
 
 import './assets/main.scss'
 
@@ -17,6 +18,7 @@ const i18n = createI18n({
 	messages: {
 		ru: ru,
 		en: en,
+		tr: tr,
 	},
 })
 app.use(i18n)
