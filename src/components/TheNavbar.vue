@@ -1,7 +1,7 @@
 <template>
 	<nav>
-		<button @click="$i18n.locale = 'EN'">EN</button>
-		<button @click="$i18n.locale = 'RU'">RU</button>
+		<button @click="$i18n.locale = 'en'">EN</button>
+		<button @click="$i18n.locale = 'ru'">RU</button>
 
 		<router-link to="/" class="language">RU</router-link>
 		<router-link to="/en" class="language">EN</router-link>

@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n'
-import EN from './locale/en.json'
-import RU from './locale/ru.json'
+import en from './locale/en.json'
+import ru from './locale/ru.json'
 
 import './assets/main.scss'
 
@@ -11,10 +11,12 @@ import router from './router'
 const app = createApp(App)
 
 const i18n = createI18n({
-	locale: navigator.language.split('-')[1],
+	locale: navigator.language.split('-')[0],
+	legacy: false,
+	fallbackLocale: 'en',
 	messages: {
-		EN: EN,
-		RU: RU,
+		ru: ru,
+		en: en,
 	},
 })
 app.use(i18n)
