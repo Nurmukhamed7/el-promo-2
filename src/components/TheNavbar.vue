@@ -1,12 +1,23 @@
 <template>
 	<nav>
-		<button @click="$i18n.locale = 'en'">EN</button>
-		<button @click="$i18n.locale = 'ru'">RU</button>
-		<button @click="$i18n.locale = 'tr'">TR</button>
-
-		<router-link to="/" class="language">RU</router-link>
-		<router-link to="/en" class="language">EN</router-link>
-		<router-link to="/tr" class="language">TR</router-link>
+		<button
+			:class="{ language: true, active: $i18n.locale === 'ru' }"
+			@click="$i18n.locale = 'ru'"
+		>
+			RU
+		</button>
+		<button
+			:class="{ language: true, active: $i18n.locale === 'en' }"
+			@click="$i18n.locale = 'en'"
+		>
+			EN
+		</button>
+		<button
+			:class="{ language: true, active: $i18n.locale === 'tr' }"
+			@click="$i18n.locale = 'tr'"
+		>
+			TR
+		</button>
 	</nav>
 </template>
 
@@ -23,9 +34,6 @@ nav {
 }
 
 .language {
-}
-
-a {
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1;
@@ -35,10 +43,11 @@ a {
 	border-radius: 10px;
 	opacity: 0.4;
 }
-.router-link-active {
+
+.language.active {
+	opacity: 1;
 	background: $dark-purple;
 	color: $white;
 	border: 2px solid $white;
-	opacity: 1;
 }
 </style>
