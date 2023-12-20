@@ -144,7 +144,7 @@
 }
 .right-pic-2 {
 	position: absolute;
-	right: -40px;
+	right: -20px;
 	width: 128px;
 	top: -180px;
 }
