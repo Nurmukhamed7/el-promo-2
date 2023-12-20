@@ -1,7 +1,6 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue'
 import SectionTwo from '@/components/SectionTwo.vue'
-import SectionLast from '@/components/SectionLast.vue'
 import SectionThree from '@/components/SectionThree.vue'
 </script>
 
@@ -114,8 +113,6 @@ import SectionThree from '@/components/SectionThree.vue'
 			</header>
 			<section-two></section-two>
 			<section-three></section-three>
-			<div class="reed">TEST</div>
-			<section-last></section-last>
 		</div>
 	</div>
 </template>

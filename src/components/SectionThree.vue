@@ -8,9 +8,19 @@
 			<h3>{{ $t('How will the raffle results be summarized?') }}</h3>
 		</div>
 		<div class="how-paragraph">
-			<p>
-				{{ $t('Every Sunday') }}
+			<p v-if="$i18n.locale === 'ru'">
+				Каждое воскресенье в прямом эфире Instagram @easylife_turkiye методом
+				случайных чисел определяется победитель.
 			</p>
+			<p v-if="$i18n.locale === 'en'">
+				Every Sunday live on Instagram @easylife_turkiye the winner is
+				determined by random numbers.
+			</p>
+			<p v-if="$i18n.locale === 'tr'">
+				Her Pazar Instagram'da @easylife_turkiye canlı yayında, kazanan rastgele
+				sayılarla belirlenecektir.
+			</p>
+
 			<p>
 				{{ $t('The Winner') }}
 			</p>
