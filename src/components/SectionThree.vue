@@ -82,7 +82,7 @@
 .how-header {
 	margin: 31px 0 71px;
 	h3 {
-		color: $yellow;
+		color: $yellow; // yellow
 		text-align: center;
 		font-size: 24px;
 	}
