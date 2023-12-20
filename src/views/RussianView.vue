@@ -111,8 +111,9 @@ import SectionThree from '@/components/SectionThree.vue'
 					</div>
 				</div>
 			</header>
-			<section-two></section-two>
-			<section-three></section-three>
+			<SectionTwo></SectionTwo>
+			<SectionThree></SectionThree>
+			<SectionThree></SectionThree>
 		</div>
 	</div>
 </template>

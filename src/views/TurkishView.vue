@@ -1,6 +1,5 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue'
-// import SectionSecond from '../../components/second/SectionSecond.vue'
 </script>
 
 <template>
