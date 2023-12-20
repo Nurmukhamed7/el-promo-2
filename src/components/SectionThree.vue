@@ -5,21 +5,19 @@
 			<span>EasyLife</span>
 		</div>
 		<div class="how-header">
-			<h3>Как будут подводиться итоги розыгрыша?</h3>
+			<h3>{{ $t('How will the raffle results be summarized?') }}</h3>
 		</div>
 		<div class="how-paragraph">
 			<p>
-				Каждое воскресенье в прямом эфире Instagram @easylife_turkiye методом
-				случайных чисел определяется победитель
+				{{ $t('Every Sunday') }}
 			</p>
 			<p>
-				О своём выигрыше Победитель узнает из публикации и личного сообщения в
-				приложении EasyLife.
+				{{ $t('The Winner') }}
 			</p>
 		</div>
 		<div class="bg">
 			<img class="bg-image" src="@/assets/images/background15.png" alt="" />
-			<h1 class="luck">Удачи!</h1>
+			<h1 class="luck">{{ $t('Good luck!') }}</h1>
 			<div class="instagram">
 				<img src="@/assets/images/instagram.svg" alt="instagram" />
 				<a href="https://www.instagram.com/easylife_turkiye" target="_blank"
@@ -28,23 +26,50 @@
 			</div>
 		</div>
 		<div class="downloads">
-			<img
+			<a
 				v-if="$i18n.locale === 'ru'"
-				class="btn"
-				src="@/assets/images/appstore-ru.png"
-				alt="appstore"
-			/>
-			<img
+				href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384?platform=iphone"
+				target="_blank"
+			>
+				<img
+					class="btn"
+					src="@/assets/images/appledownloadRu.svg"
+					alt="appledownloadRu"
+				/>
+			</a>
+			<a
 				v-else
-				class="btn"
-				src="@/assets/images/appstore-en.png"
-				alt="appstore"
-			/>
-			<img
-				class="btn"
-				src="@/assets/images/googleplay-ru.png"
-				alt="googleplay"
-			/>
+				href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384?platform=iphone"
+				target="_blank"
+			>
+				<img
+					class="btn"
+					src="@/assets/images/appledownloadEn.svg"
+					alt="appledownloadEn"
+				/>
+			</a>
+			<a
+				v-if="$i18n.locale === 'ru'"
+				href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life&hl=en_US"
+				target="_blank"
+			>
+				<img
+					class="btn"
+					src="@/assets/images/googledownloadRu.svg"
+					alt="googledownloadRu"
+				/>
+			</a>
+			<a
+				v-else
+				href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life&hl=en_US"
+				target="_blank"
+			>
+				<img
+					class="btn"
+					src="@/assets/images/googledownloadEn.svg"
+					alt="googledownloadEn"
+				/>
+			</a>
 		</div>
 	</section>
 </template>
@@ -74,7 +99,7 @@
 	position: absolute;
 	top: -100px;
 	z-index: -10;
-	width: 375px;
+	width: 300px; // 375px
 }
 
 .luck {

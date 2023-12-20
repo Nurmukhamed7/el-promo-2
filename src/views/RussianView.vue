@@ -15,7 +15,7 @@ import SectionThree from '@/components/SectionThree.vue'
 				</div>
 				<h2>{{ $t('attension') }}</h2>
 				<div class="rel">
-					<h1>РОЗЫГРЫШ</h1>
+					<h1>{{ $t('prizedraw') }}</h1>
 					<img
 						class="left-pic"
 						src="@/assets/images/leftPic.png"
@@ -33,37 +33,81 @@ import SectionThree from '@/components/SectionThree.vue'
 						alt="fingers"
 					/>
 					<img
+						v-if="$i18n.locale === 'ru'"
 						class="iphone"
 						src="@/assets/images/iphone-ru.png"
 						alt="iphone-ru"
 					/>
+					<img
+						v-if="$i18n.locale === 'en'"
+						class="iphone"
+						src="@/assets/images/iphone-en.png"
+						alt="iphone-ru"
+					/>
+					<img
+						v-if="$i18n.locale === 'tr'"
+						class="iphone"
+						src="@/assets/images/iphone-tr.png"
+						alt="iphone-ru"
+					/>
 				</div>
 				<div class="conditions">
-					<h3>Размести свое объявление и выиграй:</h3>
-					<h3><span>300 лир</span> - раз в неделю</h3>
-					<h3><span>1 000 лир</span> - раз в месяц</h3>
+					<h3>{{ $t('place') }}</h3>
+					<h3>
+						<span>{{ $t('300TL') }}</span> - {{ $t('once a week') }}
+					</h3>
+					<h3>
+						<span>{{ $t('1 000 TL') }}</span> - {{ $t('once a month') }}
+					</h3>
 				</div>
 				<div class="read">
-					<h3>Читай условия розыгрыша:</h3>
+					<h3>{{ $t('Terms and conditions:') }}</h3>
 					<img class="arrow" src="@/assets/images/arrow.svg" alt="arrow" />
 					<div class="downloads">
-						<img
+						<a
 							v-if="$i18n.locale === 'ru'"
-							class="btn"
-							src="@/assets/images/appstore-ru.png"
-							alt="appstore"
-						/>
-						<img
+							href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384?platform=iphone"
+							target="_blank"
+						>
+							<img
+								class="btn"
+								src="@/assets/images/appledownloadRu.svg"
+								alt="appledownloadRu"
+							/>
+						</a>
+						<a
 							v-else
-							class="btn"
-							src="@/assets/images/appstore-en.png"
-							alt="appstore"
-						/>
-						<img
-							class="btn"
-							src="@/assets/images/googleplay-ru.png"
-							alt="googleplay"
-						/>
+							href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384?platform=iphone"
+							target="_blank"
+						>
+							<img
+								class="btn"
+								src="@/assets/images/appledownloadEn.svg"
+								alt="appledownloadEn"
+							/>
+						</a>
+						<a
+							v-if="$i18n.locale === 'ru'"
+							href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life&hl=en_US"
+							target="_blank"
+						>
+							<img
+								class="btn"
+								src="@/assets/images/googledownloadRu.svg"
+								alt="googledownloadRu"
+							/>
+						</a>
+						<a
+							v-else
+							href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life&hl=en_US"
+							target="_blank"
+						>
+							<img
+								class="btn"
+								src="@/assets/images/googledownloadEn.svg"
+								alt="googledownloadEn"
+							/>
+						</a>
 					</div>
 				</div>
 			</header>

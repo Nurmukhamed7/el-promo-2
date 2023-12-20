@@ -7,34 +7,36 @@
 			<img class="fingers" src="@/assets/images/fingers.png" alt="fingers" />
 		</div>
 		<div class="steps-header">
-			<h3>5 шагов до выигрыша:</h3>
+			<h3>{{ $t('5 steps to win:') }}</h3>
 		</div>
 		<div class="steps-paragraph">
-			<h3 class="steps-paragraph-odd">1 - Скачай приложение</h3>
+			<h3 class="steps-paragraph-odd">{{ $t('1 - Download the app') }}</h3>
 			<img
 				class="steps-arrow-odd"
 				src="@/assets/images/yellow-arrow.svg"
 				alt="fingers"
 			/>
-			<h3 class="steps-paragraph-even">2 - Зарегистрируйся</h3>
+			<h3 class="steps-paragraph-even">{{ $t('2 - Register') }}</h3>
 			<img
 				class="steps-arrow-even"
 				src="@/assets/images/yellow-arrow.svg"
 				alt="fingers"
 			/>
-			<h3 class="steps-paragraph-odd">3 - Размести объявление</h3>
+			<h3 class="steps-paragraph-odd">{{ $t('3 - Place an ad') }}</h3>
 			<img
 				class="steps-arrow-odd"
 				src="@/assets/images/yellow-arrow.svg"
 				alt="fingers"
 			/>
-			<h3 class="steps-paragraph-even">4 - Подтверди участие</h3>
+			<h3 class="steps-paragraph-even">
+				{{ $t('4 - Confirm participation') }}
+			</h3>
 			<img
 				class="steps-arrow-even"
 				src="@/assets/images/yellow-arrow.svg"
 				alt="fingers"
 			/>
-			<h3 class="steps-paragraph-odd">5 - Ожидай итоги</h3>
+			<h3 class="steps-paragraph-odd">{{ $t('5 - Wait for results') }}</h3>
 		</div>
 		<div class="read">
 			<img
@@ -50,23 +52,50 @@
 
 			<img class="arrow" src="@/assets/images/arrow.svg" alt="arrow" />
 			<div class="downloads">
-				<img
+				<a
 					v-if="$i18n.locale === 'ru'"
-					class="btn"
-					src="@/assets/images/appstore-ru.png"
-					alt="appstore"
-				/>
-				<img
+					href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384?platform=iphone"
+					target="_blank"
+				>
+					<img
+						class="btn"
+						src="@/assets/images/appledownloadRu.svg"
+						alt="appledownloadRu"
+					/>
+				</a>
+				<a
 					v-else
-					class="btn"
-					src="@/assets/images/appstore-en.png"
-					alt="appstore"
-				/>
-				<img
-					class="btn"
-					src="@/assets/images/googleplay-ru.png"
-					alt="googleplay"
-				/>
+					href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384?platform=iphone"
+					target="_blank"
+				>
+					<img
+						class="btn"
+						src="@/assets/images/appledownloadEn.svg"
+						alt="appledownloadEn"
+					/>
+				</a>
+				<a
+					v-if="$i18n.locale === 'ru'"
+					href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life&hl=en_US"
+					target="_blank"
+				>
+					<img
+						class="btn"
+						src="@/assets/images/googledownloadRu.svg"
+						alt="googledownloadRu"
+					/>
+				</a>
+				<a
+					v-else
+					href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life&hl=en_US"
+					target="_blank"
+				>
+					<img
+						class="btn"
+						src="@/assets/images/googledownloadEn.svg"
+						alt="googledownloadEn"
+					/>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -104,6 +133,7 @@
 	h3 {
 		color: $yellow;
 		text-align: center;
+		font-size: 24px;
 	}
 }
 
@@ -118,7 +148,7 @@
 .steps-paragraph-even {
 	margin: 10px 10px 20px 0px;
 	font-size: 24px;
-	text-align: right;
+	text-align: center;
 }
 
 .steps-arrow-odd {
@@ -147,6 +177,7 @@
 	right: -20px;
 	width: 128px;
 	top: -180px;
+	z-index: -10;
 }
 
 .arrow {
