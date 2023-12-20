@@ -1,7 +1,7 @@
 <script setup>
 import TheNavbar from '@/components/TheNavbar.vue'
-import SectionTwo from '@/components/SectionTwo.vue'
-import SectionThree from '@/components/SectionThree.vue'
+// import SectionTwo from '@/components/SectionTwo.vue'
+// import SectionThree from '@/components/SectionThree.vue'
 </script>
 
 <template>
@@ -111,9 +111,9 @@ import SectionThree from '@/components/SectionThree.vue'
 					</div>
 				</div>
 			</header>
-			<SectionTwo></SectionTwo>
+			<!-- <SectionTwo></SectionTwo>
 			<SectionThree></SectionThree>
-			<SectionThree></SectionThree>
+			<SectionThree></SectionThree> -->
 		</div>
 	</div>
 </template>
