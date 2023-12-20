@@ -79,6 +79,10 @@
 <style lang="scss" scoped>
 @import '@/assets/main.scss';
 
+.wrapper {
+	margin-top: 102px;
+}
+
 .how-header {
 	margin: 31px 0 71px;
 	h3 {

@@ -111,8 +111,9 @@ import SectionThree from '@/components/SectionThree.vue'
 					</div>
 				</div>
 			</header>
-			<SectionTwo></SectionTwo>
-			<SectionThree></SectionThree>
+			<section-two></section-two>
+			<section-three></section-three>
+			<div class="reed">TEST</div>
 		</div>
 	</div>
 </template>
@@ -186,5 +187,11 @@ header {
 	.btn {
 		width: 108px;
 	}
+}
+
+.reed {
+	width: 100px;
+	height: 100px;
+	background: red;
 }
 </style>
