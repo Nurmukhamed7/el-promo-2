@@ -8,6 +8,8 @@
 /* Скрытие контейнера для десктопных устройств */
 @media only screen and (min-width: 601px) {
 	.container {
-		display: none;
+		display: block;
+		max-width: 428px;
+		margin: 0 auto;
 	}
 }
